@@ -16,7 +16,7 @@ export const api = createApi({
   endpoints: (builder) => ({
     fetchPosts: builder.query<Product[], void>({
       query: () => "/products",
-      keepUnusedDataFor: 300,
+      keepUnusedDataFor: 200,
     }),
 
     fetchPostId: builder.query<Product, number>({
